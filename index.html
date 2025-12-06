@@ -1,93 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<meta name="google-site-verification" content="YU-gRA_7cPd_VX8T1XFVNYYbgq3KYKg9F6ME9U-L70w">
-
-<title>Noida Jummah Prayer Times by Masjid | Mosque-Wise Friday Namaz Timings</title>
-
-<meta name="description" content="The only website showing Masjid-wise Jummah prayer timings in Noida & NCR. Find exact mosque-specific Friday Namaz time with live-updated locations and directions.">
-
-<meta name="keywords" content="Masjid wise Jummah time Noida, Noida Masjid Jummah timing, Friday Namaz time Noida, Mosque wise Jummah time, Noida Namaz timings, Masjid locator Noida, NCR mosques Jummah schedule">
-
-<meta name="author" content="Noida Jummah Prayer Project">
+<title>Noida Masjid-Wise Jummah Times — Elegant Mosque Timetable</title>
+<meta name="description" content="Elegant, mosque-wise Jummah (Friday) prayer timings for Noida & NCR. See exact Jummah time for each Masjid, verified by the community. Share corrections at prayerdetails@gmail.com." />
+<meta name="keywords" content="Masjid wise Jummah time Noida, Noida mosque timings, mosque-wise jummah noida, Friday namaz Noida, Noida masjid locator" />
+<meta name="author" content="Noida Jummah Project" />
 
 <!-- Open Graph -->
-<meta property="og:title" content="Noida Jummah Prayer Times by Masjid">
-<meta property="og:description" content="Accurate Masjid-wise Friday Namaz timings and mosque locations in Noida NCR. Updated automatically.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://prayerdetails.github.io/namaztimelocation/favicon.png">
-<meta property="og:url" content="https://prayerdetails.github.io/namaztimelocation/">
+<meta property="og:title" content="Noida Masjid-Wise Jummah Times" />
+<meta property="og:description" content="Find exact Jummah timings for each mosque in Noida & NCR. Community verified and updated." />
+<meta property="og:image" content="https://prayerdetails.github.io/namaztimelocation/og-image.png" />
+<meta property="og:url" content="https://prayerdetails.github.io/namaztimelocation/" />
+<meta property="og:type" content="website" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Noida Jummah Prayer Times by Masjid">
-<meta name="twitter:description" content="Accurate mosque-wise Friday prayer schedule for Noida NCR. Updated daily.">
-<meta name="twitter:image" content="https://prayerdetails.github.io/namaztimelocation/favicon.png">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Noida Masjid-Wise Jummah Times" />
+<meta name="twitter:description" content="Exact mosque-wise Jummah timetable for Noida & NCR. Email corrections to prayerdetails@gmail.com" />
 
-<!-- Canonical -->
-<link rel="canonical" href="https://prayerdetails.github.io/namaztimelocation/">
+<link rel="canonical" href="https://prayerdetails.github.io/namaztimelocation/" />
+<link rel="icon" href="favicon.png" type="image/png" />
 
-<link rel="icon" href="favicon.png" type="image/png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css" />
 
-<!-- Schema: WebSite -->
+<!-- Minimal structured data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Noida Jummah Prayer Times",
+  "name": "Noida Masjid-Wise Jummah Times",
   "url": "https://prayerdetails.github.io/namaztimelocation/",
-  "description": "Find accurate Masjid-wise Jummah prayer timings along with mosque locations in Noida NCR.",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://prayerdetails.github.io/namaztimelocation/?q={search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
+  "description": "Masjid-wise Jummah timings and mosque locator for Noida & NCR."
 }
 </script>
-
-<!-- Schema: ItemList for Masjid-wise timings -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Masjid-wise Jummah Timings",
-  "description": "Exact Friday Jummah timings for every Masjid in Noida NCR.",
-  "itemListOrder": "Ascending"
-}
-</script>
-
 </head>
 
 <body>
+  <!-- Top slim banner (subtle animated) -->
+  <div id="notify-banner" class="notify-banner" role="region" aria-label="Community help banner">
+    <div class="notify-inner">
+      <svg class="mosque-dot" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l4 4h-3v6h-2V6H8l4-4zM4 12v8h16v-8l-8-5-8 5z"/></svg>
+      <div class="notify-text">Help keep Jummah times accurate — send mosque timings to <a href="mailto:prayerdetails@gmail.com">prayerdetails@gmail.com</a></div>
+    </div>
+    <button class="notify-close" id="close-banner" aria-label="Dismiss">✕</button>
+  </div>
 
-<header class="header">
-   <h1>Noida Jummah Prayer Times</h1>
-   <p>The only platform showing <strong>mosque-wise</strong> Friday Namaz timings across Noida & NCR</p>
-</header>
+  <header class="site-hero">
+    <div class="hero-inner">
+      <h1 class="brand">Noida Masjid-Wise Jummah Times</h1>
+      <p class="lead">Exact Friday Namaz time for each masjid — community verified & updated.</p>
+    </div>
+  </header>
 
-<div class="container">
+  <main class="site-main" id="main" role="main">
+    <section class="panel panel-timings" aria-labelledby="timings-heading">
+      <div class="panel-head">
+        <h2 id="timings-heading">Masjid-wise Jummah Timings</h2>
+        <p class="panel-sub">Sorted by time — click a mosque for directions.</p>
+      </div>
 
-<section id="jummah-section" class="card">
-   <h2>⏱ Friday Namaz Timings (Masjid-Wise)</h2>
-   <p class="subtitle">Live updated timings from community sources.</p>
-   <div id="jummah-times" class="list">Loading...</div>
-</section>
+      <div id="timings-list" class="grid-list" aria-live="polite">Loading masjid timings…</div>
+    </section>
 
-<section id="mosque-section" class="card">
-   <h2>🕌 Masjid & Musallah Locations</h2>
-   <p class="subtitle">Find mosques with confirmed Jummah timings.</p>
-   <div id="mosque-list" class="list">Loading...</div>
-</section>
+    <section class="panel panel-locator" aria-labelledby="locator-heading">
+      <div class="panel-head">
+        <h2 id="locator-heading">Mosque Locator</h2>
+        <p class="panel-sub">Open map directions for each masjid.</p>
+      </div>
 
-</div>
+      <div id="locator-list" class="grid-list">Loading locations…</div>
+    </section>
+  </main>
 
-<footer class="footer">
-   <p>Non-profit community project • Mosque-wise timings updated daily</p>
-</footer>
+  <footer class="site-foot">
+    <div class="foot-inner">
+      <p>Non-profit community project — corrections & data: <a href="mailto:prayerdetails@gmail.com">prayerdetails@gmail.com</a></p>
+      <small>© <span id="year"></span> Noida Jummah Project</small>
+    </div>
+  </footer>
 
 <script src="script.js"></script>
 </body>
